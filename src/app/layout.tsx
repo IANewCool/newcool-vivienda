@@ -13,8 +13,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Vivienda - NewCooltura Informada",
+  title: "Vivienda Chile - SERVIU | NewCooltura Informada",
   description: "Buscador de oficinas SERVIU, subsidios habitacionales, calculadora de financiamiento y proceso de postulacion en Chile",
+  keywords: ["vivienda Chile", "SERVIU", "subsidios habitacionales", "postulacion vivienda", "casa propia"],
+  openGraph: {
+    title: "Vivienda Chile - NewCooltura Informada",
+    description: "SERVIU, subsidios y financiamiento",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -23,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
